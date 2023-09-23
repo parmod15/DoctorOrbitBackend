@@ -13,11 +13,13 @@ class DoctorRepository {
 
   async get(doctorId) {
     try {
-      const doctor = await doctors.findByPk(doctorId);
-      return doctor;
+      const response = await doctors.findByPk(doctorId);
+      return response;
     } catch (error) {
       console.log("Something went wrong in repository layer");
       throw error;
     }
   }
 }
+
+module.exports = DoctorRepository;
