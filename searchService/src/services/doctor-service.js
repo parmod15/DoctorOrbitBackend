@@ -25,3 +25,5 @@ class DoctorService {
     }
   }
 }
+
+module.exports = DoctorService;
