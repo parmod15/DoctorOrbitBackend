@@ -1,2 +1,3 @@
 searchService/node_modules
 searchService/.env
+searchService/src/config/config.json
