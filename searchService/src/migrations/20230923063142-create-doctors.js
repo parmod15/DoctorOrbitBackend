@@ -27,6 +27,10 @@ module.exports = {
       rating: {
         type: Sequelize.INTEGER,
         defaultValue: 1,
+        validate: {
+          min: 0,
+          max: 5,
+        },
       },
       address: {
         type: Sequelize.STRING,
