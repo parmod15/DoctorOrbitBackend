@@ -1,3 +1,6 @@
 searchService/node_modules
 searchService/.env
 searchService/src/config/config.json
+
+bookingService/node_modules
+bookingService/.env

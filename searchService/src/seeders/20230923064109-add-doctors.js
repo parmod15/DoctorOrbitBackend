@@ -56,7 +56,7 @@ module.exports = {
           "Dr. Amitabh Rawat's areas of expertise include dermato-cosmetology, platelet rich plasma therapy, micropigmentation, skin grafting, and melanocyte transplantation for the treatment of vitiligo, hair management, allergy management",
         rating: 5,
         address:
-          " 29-7-33, 1st Floor, Vishnuvardhanarao Street, Suryaraopet, Vijayawada, Andhra Pradesh -  520002,",
+          " 29-7-33, 1st Floor, Vishnuvardhanarao Street, Suryaraopet, Vijayawada, Andhra Pradesh -  520002",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
@@ -114,7 +114,7 @@ module.exports = {
           "Dr. Ashok KD has 37 years of expertise as a pulmonologist, and specializes in Respiratory Diseases, Sleep Medicine, Tuberculosis, and Interventional Pulmonology.",
         rating: 3,
         address:
-          " 184, 3rd floor, Sree Raghavendra complex 3rd Cross Road Bengaluru , 560003",
+          " 184, 3rd floor, Sree Raghavendra complex 3rd Cross Road, Bengaluru - 560003",
         createdAt: new Date(),
         updatedAt: new Date(),
       },
