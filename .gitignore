@@ -4,3 +4,4 @@ searchService/src/config/config.json
 
 bookingService/node_modules
 bookingService/.env
+bookingService/src/config/config.json
