@@ -10,6 +10,16 @@ class BookingRepository {
       throw error;
     }
   }
+
+  async get() {
+    try {
+      const response = await bookings.findAll();
+      return response;
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
 }
 
 module.exports = BookingRepository;

@@ -14,6 +14,16 @@ class BookingService {
       throw error;
     }
   }
+
+  async getAll() {
+    try {
+      const response = await this.bookingRepository.get();
+      return response;
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
 }
 
 module.exports = BookingService;

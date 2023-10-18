@@ -6,9 +6,11 @@ const express = require("express");
 const router = express.Router();
 
 router.post(
-  "/create-booking",
+  "/create-bookings",
   validRequestMiddleware.validRequest,
   BookingController.create
 );
+
+router.get("/get-bookings", BookingController.getAll);
 
 module.exports = router;
