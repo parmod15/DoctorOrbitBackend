@@ -21,6 +21,20 @@ class BookingRepository {
     }
   }
 
+  async delete(id) {
+    try {
+      const response = await bookings.destroy({
+        where: {
+          id,
+        },
+      });
+      return response;
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
+
   async deleteAll() {
     try {
       const response = await bookings.truncate();

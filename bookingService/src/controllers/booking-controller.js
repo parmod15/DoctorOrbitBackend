@@ -40,6 +40,26 @@ const getAll = async (req, res) => {
   }
 };
 
+const deleteBooking = async (req, res) => {
+  try {
+    const response = await bookingService.delete(req.params.id);
+    console.log("params is ", req.params);
+    return res.status(201).json({
+      data: response,
+      success: true,
+      message: "Succesfully deleted a booking",
+      error: {},
+    });
+  } catch (error) {
+    return res.status(501).json({
+      data: {},
+      success: false,
+      message: "Something went wrong in deleting booking",
+      error: {},
+    });
+  }
+};
+
 const deleteAll = async (req, res) => {
   try {
     const response = await bookingService.deleteAll(req.body.isAdmin);
@@ -50,7 +70,7 @@ const deleteAll = async (req, res) => {
       error: {},
     });
   } catch (error) {
-    return res.status(500).json({
+    return res.status(501).json({
       data: {},
       success: false,
       message: " Something went wrong in deleting bookings",
@@ -62,5 +82,6 @@ const deleteAll = async (req, res) => {
 module.exports = {
   create,
   getAll,
+  deleteBooking,
   deleteAll,
 };

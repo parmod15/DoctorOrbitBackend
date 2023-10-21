@@ -25,6 +25,16 @@ class BookingService {
     }
   }
 
+  async delete(id) {
+    try {
+      const response = await this.bookingRepository.delete(id);
+      return response;
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
+
   async deleteAll(isAdmin) {
     try {
       if (isAdmin != "true") {
