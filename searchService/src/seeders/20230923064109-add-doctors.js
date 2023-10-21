@@ -102,7 +102,7 @@ module.exports = {
         description:
           " Dr. Bharat Gupta is an eminent Rheumatologist and has a distinguished service with the Indian Armed Forces. Has an expertise in intra-articular injections for providing relief to arthritis patients.",
         rating: 2,
-        address: "30 a/ Nusser House, M Parmanand Marg, Srinagar - 400004,",
+        address: "30 a/ Nusser House, M Parmanand Marg, Srinagar - 400004",
         createdAt: new Date(),
         updatedAt: new Date(),
       },

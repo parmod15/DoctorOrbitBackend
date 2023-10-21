@@ -40,7 +40,27 @@ const getAll = async (req, res) => {
   }
 };
 
+const deleteAll = async (req, res) => {
+  try {
+    const response = await bookingService.deleteAll(req.body.isAdmin);
+    return res.status(201).json({
+      data: response,
+      success: true,
+      message: "Succesfully deleted all bookings",
+      error: {},
+    });
+  } catch (error) {
+    return res.status(500).json({
+      data: {},
+      success: false,
+      message: " Something went wrong in deleting bookings",
+      error: error,
+    });
+  }
+};
+
 module.exports = {
   create,
   getAll,
+  deleteAll,
 };

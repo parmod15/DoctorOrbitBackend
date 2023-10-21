@@ -24,6 +24,20 @@ class BookingService {
       throw error;
     }
   }
+
+  async deleteAll(isAdmin) {
+    try {
+      if (isAdmin != "true") {
+        throw "not authorized";
+      } else {
+        const response = await this.bookingRepository.deleteAll();
+        return response;
+      }
+    } catch (error) {
+      console.log(error);
+      throw error;
+    }
+  }
 }
 
 module.exports = BookingService;

@@ -13,4 +13,6 @@ router.post(
 
 router.get("/get-bookings", BookingController.getAll);
 
+router.delete("/delete-bookings", BookingController.deleteAll);
+
 module.exports = router;
